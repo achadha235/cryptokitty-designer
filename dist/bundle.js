@@ -42487,10 +42487,12 @@ var App = /** @class */ (function (_super) {
     App.prototype.render = function () {
         return (React.createElement(react_router_dom_1.Route, { path: '/' },
             React.createElement(semantic_ui_react_1.Grid, { style: { paddingTop: 10 } },
-                React.createElement(semantic_ui_react_1.Grid.Row, { style: { height: '20px' } },
+                React.createElement(semantic_ui_react_1.Grid.Row, null,
                     React.createElement(semantic_ui_react_2.Container, { text: true },
-                        React.createElement("h1", null, " CryptoKitty Designer "),
-                        "Kittens and ETH appreciated @ 0x02Ee97a13e434717e3FFa12758a235D1a1680775 :)")),
+                        React.createElement("p", null,
+                            React.createElement("b", null, " CryptoKitty Designer "),
+                            "- Kittens and ETH appreciated",
+                            React.createElement("input", { value: '0x02Ee97a13e434717e3FFa12758a235D1a1680775' })))),
                 React.createElement(semantic_ui_react_1.Grid.Row, null,
                     React.createElement(semantic_ui_react_1.Grid.Column, { width: 16 },
                         React.createElement(react_router_dom_1.Route, { path: '/', component: About_1.About }))))));

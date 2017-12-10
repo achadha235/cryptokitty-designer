@@ -15,13 +15,16 @@ export class App extends React.Component<{}, {}> {
 		return (
 			<Route path='/'>
 				<Grid style={{paddingTop: 10}}>
-					<Grid.Row style={{height: '20px'}}>
+					<Grid.Row>
 						<Container text={true}>
-							<h1> CryptoKitty Designer </h1>
-							Kittens and ETH appreciated @ 0x02Ee97a13e434717e3FFa12758a235D1a1680775 :)
+							<p>
+								<b> CryptoKitty Designer </b>
+								- Kittens and ETH appreciated
+								<input value={'0x02Ee97a13e434717e3FFa12758a235D1a1680775'}/>
+							</p>
 						</Container>
 					</Grid.Row>
-					<Grid.Row>
+					<Grid.Row >
 						<Grid.Column width={16}>
 							<Route path='/' component={About} />
 						</Grid.Column>
