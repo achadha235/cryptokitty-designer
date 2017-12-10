@@ -21497,7 +21497,8 @@ exports.Tertiary = {
     lemonade: "#ffef85",
     swampgreen: "#44e192",
     chocolate: "#c47e33",
-    royalblue: "#5b6ee8"
+    royalblue: "#5b6ee8",
+    wolfgrey: "#737184"
 };
 exports.EyeColor = {
     gold: "#fcdf35",
