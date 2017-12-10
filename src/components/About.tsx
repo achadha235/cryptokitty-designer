@@ -1,3 +1,4 @@
+// tslint:disable:jsx-no-multiline-js
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Header, Segment, Button, Divider } from 'semantic-ui-react';
@@ -185,7 +186,7 @@ export class About extends React.Component {
 										<input value={k} onClick={onFieldChange} type="radio" name="eyeColor" checked={this.state.eyeColor === k}/>
 										<label>{k}</label>
 									</div>
-									</div>									
+									</div>
 								))
 							}
 						</div>

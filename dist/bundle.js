@@ -61785,6 +61785,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// tslint:disable:jsx-no-multiline-js
 var React = __webpack_require__(0);
 var semantic_ui_react_1 = __webpack_require__(74);
 var Cryptokitty_1 = __webpack_require__(385);
