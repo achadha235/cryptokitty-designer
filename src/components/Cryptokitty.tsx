@@ -27,12 +27,12 @@ export enum BodyType {
 }
 
 export enum PatternType { 
-	spock='spock',
-	tigerpunk='tigerpunk',
-	calicool='calicool',
-	luckystripe='luckystripe',
-	jaguar='jaguar',
-	totesbasic='totesbasic',
+	spock = 'spock',
+	tigerpunk = 'tigerpunk',
+	calicool = 'calicool',
+	luckystripe = 'luckystripe',
+	jaguar = 'jaguar',
+	totesbasic = 'totesbasic',
 }
 
 export enum MouthType {
@@ -70,7 +70,7 @@ export class Cryptokitty extends React.Component<CryptokittyFeatures, Cryptokitt
 		const pattern = props.pattern;
 		const mouth = props.mouth;
 		const eye = props.eye;
-		
+
 		const colors = props.colors;
 		this.detectKittyColors = this.detectKittyColors.bind(this);
 		this.render = this.render.bind(this);

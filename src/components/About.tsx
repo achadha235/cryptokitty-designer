@@ -1,7 +1,7 @@
 // tslint:disable:jsx-no-multiline-js
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Grid, Header, Segment, Button, Divider } from 'semantic-ui-react';
+import { Container, Grid, Header, Segment, Button, Divider, Input } from 'semantic-ui-react';
 import { Cryptokitty, MouthType, EyeType, PatternType, BodyType } from './Cryptokitty';
 import  * as c from '../cattributes/colors';
 import { randomEnumValue,randomKey } from '../utils';
@@ -178,7 +178,7 @@ export class About extends React.Component {
 							}
 						</div>
 						<div className="fields">
-							<label>Secondary</label>
+							<label>Eye</label>
 							{
 								_.map(Object.keys(c.EyeColor), (k) => (
 									<div className="field" key={k}>

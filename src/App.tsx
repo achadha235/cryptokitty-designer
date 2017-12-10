@@ -19,8 +19,10 @@ export class App extends React.Component<{}, {}> {
 						<Container text={true}>
 							<p>
 								<b> CryptoKitty Designer </b>
-								- Kittens and ETH appreciated
-								<input value={'0x02Ee97a13e434717e3FFa12758a235D1a1680775'}/>
+								<p> Make the kitty of your dreams </p>
+								<p/>
+								Kittens and ETH appreciated <span> @ </span>
+								<Input value={'0x02Ee97a13e434717e3FFa12758a235D1a1680775'}/>
 							</p>
 						</Container>
 					</Grid.Row>
