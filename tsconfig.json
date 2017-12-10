@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "lib": ["es2015", "dom"],
+        "types": [
+            "jest"
+        ],
+        "externals": {
+            "react": "React",
+            "react-dom": "ReactDOM"
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

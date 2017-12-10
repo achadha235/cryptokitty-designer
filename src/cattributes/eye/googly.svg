@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
+  <g id="eye">
+    <circle fill="#FFF" cx="1702.8" cy="1118" r="129.7"/>
+    <clipPath id="eyeClipPath">
+      <circle cx="1702.8" cy="1118" r="129.7"/>
+    </clipPath>
+    <g clip-path="url(#eyeClipPath)">
+      <circle fill="#7c40ff" cx="1673.8" cy="1125.5" r="100.1"/>
+      <circle fill="#31323D" cx="1670.8" cy="1127.4" r="83"/>
+      <ellipse transform="rotate(-7.499 1710.423 1057.792)" fill="#FFF" cx="1710.1" cy="1057.6" rx="44.2" ry="44.2"/>
+    </g>
+    <circle fill="none" stroke="#31323D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" cx="1702.8" cy="1118" r="129.7"/>
+    <circle fill="#FFF" cx="1161.5" cy="1129.3" r="129.7"/>
+    <clipPath id="eyeClipPath2">
+      <circle cx="1161.5" cy="1129.3" r="129.7"/>
+    </clipPath>
+    <g clip-path="url(#eyeClipPath2)">
+      <circle fill="#7c40ff" cx="1192.7" cy="1131.4" r="100.1"/>
+      <circle fill="#31323D" cx="1189.6" cy="1133.3" r="83"/>
+      <ellipse transform="rotate(-7.499 1229.138 1063.542)" fill="#FFF" cx="1228.9" cy="1063.3" rx="44.2" ry="44.2"/>
+    </g>
+    <circle fill="none" stroke="#31323D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" cx="1161.5" cy="1129.3" r="129.7"/>
+  </g>
+</svg>

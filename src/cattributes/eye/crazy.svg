@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
+  <g id="highlight">
+    <defs>
+      <clipPath id="highlightClipPath">
+        <path fill="none" d="M2200.5 2195.7c-43-29.4-132.4-61.7-179.8-75.5l-.8-.3a248.1 248.1 0 0 0 6.4-155.9l-134.5-437.7a121.2 121.2 0 0 0 41.2-22.3c-16.2 7.6-39.1-8.1-54.9-21.9l-2.2-7.2c54.7 26.7 104.5-45.6 104.5-45.6-45.4 5.5-101.9-31.2-136.4-58.1l-3.7-12.1c36.3 6.8 73.8-24.6 73.8-24.6-43.1 1.4-93.7-74.1-115-109.3l-68-221.2a240.5 240.5 0 0 0-47.2-89.2l73.3-118.6c-32.4-31.9-120.8 34.6-150.3 57.8a240.4 240.4 0 0 0-57.8-20.2 371.4 371.4 0 0 1 21.9-38.3c5.1-7.8-2.2-17.9-11.2-15.5-26.7 7.1-55.7 28.1-64.7 34.9a1.2 1.2 0 0 1-1.9-1.3c4.1-16.7 21-88.9 7.5-95.5s-36.2 52.6-44.6 74.7a1.2 1.2 0 0 1-2.4-.5c1.7-24.4 4.8-91.4-13-88-19.7 3.7-56.1 87.7-63.1 104.1a1.2 1.2 0 0 1-2.3 0c-4.7-11.7-22.9-55.7-29.2-40.3s.6 43.3 3.4 54.3a1.2 1.2 0 0 1-2 1.2c-19-17-51.5-17.4-73.9-15.2a10.2 10.2 0 0 0-6.3 17.4 106.3 106.3 0 0 1 9.7 11.3 240.3 240.3 0 0 0-65.7 29.2l-5.2-3.5c-44.5-36.6-115.4-83.9-135.6-33.6l64.5 115.2a240.3 240.3 0 0 0-33 93.8l-38.8 204c-17.3 35.5-58.5 110.3-101.2 114.7 0 0 41.5 26.2 76.6 14.4l-2.4 12.7c-30.6 31.2-81.6 75-127.2 75.7 0 0 56.6 62.3 106.5 33.2l-1.8 9.7c-13.6 14.7-32 29.7-47.6 24.8a121.7 121.7 0 0 0 39.9 15.9l-86.8 456.2a248.9 248.9 0 0 0 12.6 117.6l-.6.2c-38.1 9.1-130.4 43.4-184.5 78.3-26.5 17.1-10.1 55.9 23.2 55.3l266.9-5.2q6.8 4.2 13.9 7.9v3.3c.4 23.3-6.7 42.4-29.9 43.6-15.6.8-28.2 9.9-30.6 21.1-4.7 21.5 5.8 38.9 27.2 40.4l84.3 5c26.4 1.6 51.9-11.3 65.3-34.1a71.4 71.4 0 0 0 8.8-23.9l5-26.6h533.6l3.5 20.7a71.6 71.6 0 0 0 43.1 54.3 53.5 53.5 0 0 0 22.3 4l91.8-3c22-2.2 30.1-15.7 27.9-36.9-.7-6.9-6.2-24.5-24.5-25.5-15.8-.9-25.2-8.6-28.1-21.9a246.8 246.8 0 0 0 65.3-28l261.6 5c33.3.5 49.3-37.6 23.2-55.4z" data-name="&lt;Clipping Path&gt;"/>
+      </clipPath>
+    </defs>
+    <g style="isolation:isolate">
+      <g clip-path="url(#highlightClipPath)" opacity=".2" style="mix-blend-mode:overlay">
+        <path fill="#fff" d="M1547.8 836.6s59 33.5 81 64.8 44.1 86.3 65.6 181c58.9 258.7 229.4 683.2 275.5 888s-81.2 286-81.2 286l61.1-35.5s63-74.8 72.5-107.6c20.8-71.9 139-33 117.2-147.7-31.7-166.5-305.7-970.5-305.7-970.5s-123.4-29.9-151.2-79.3c-20.7-36.8-73.2-64.7-124.1-79.9z"/>
+      </g>
+    </g>
+  </g>
+  <g id="eye">
+    <defs>
+      <clipPath id="eyeClipPath">
+        <circle cx="1703.3" cy="1110.7" r="129.7" fill="#fff" stroke="#31323d" stroke-width="10" stroke-miterlimit="10" transform="translate(-130.9 232.9) rotate(-7.5)" stroke-linecap="round"/>
+      </clipPath>
+      <clipPath id="eyeClipPath2">
+        <circle cx="1162" cy="1128.5" r="129.7" fill="#fff" stroke="#31323d" stroke-width="10" stroke-miterlimit="10" transform="translate(-137.9 162.1) rotate(-7.5)" stroke-linecap="round"/>
+      </clipPath>
+    </defs>
+    <circle cx="1703.3" cy="1110.7" r="129.7" fill="#fff" transform="translate(-130.9 232.9) rotate(-7.5)"/>
+    <g clip-path="url(#eyeClipPath)">
+      <circle cx="1730.3" cy="1113.2" r="106.1" fill="#fcdf35" transform="translate(-131 236.4) rotate(-7.5)"/>
+      <circle cx="1727.3" cy="1115.1" r="83" fill="#31323d" transform="translate(-131.3 236.1) rotate(-7.5)"/>
+      <circle cx="1766.6" cy="1045.2" r="44.2" fill="#fff" transform="translate(-121.8 240.6) rotate(-7.5)"/>
+    </g>
+    <circle cx="1703.3" cy="1110.7" r="129.7" fill="none" stroke="#31323d" stroke-width="10" stroke-miterlimit="10" transform="translate(-130.9 232.9) rotate(-7.5)" stroke-linecap="round"/>
+    <circle cx="1162" cy="1128.5" r="129.7" fill="#fff" transform="translate(-137.9 162.1) rotate(-7.5)"/>
+    <g clip-path="url(#eyeClipPath2)">
+      <circle cx="1129" cy="1136.6" r="106.1" fill="#fcdf35" transform="translate(-139.3 157.8) rotate(-7.5)"/>
+      <circle cx="1126" cy="1138.5" r="83" fill="#31323d" transform="translate(-139.5 157.4) rotate(-7.5)"/>
+      <circle cx="1165.3" cy="1068.6" r="44.2" fill="#fff" transform="translate(-130 162) rotate(-7.5)"/>
+    </g>
+    <circle cx="1162" cy="1128.5" r="129.7" fill="none" stroke="#31323d" stroke-width="10" stroke-miterlimit="10" transform="translate(-137.9 162.1) rotate(-7.5)" stroke-linecap="round"/>
+  </g>
+</svg>
