@@ -44,6 +44,7 @@ export enum MouthType {
 	happygokitty = 'happygokitty',
 	pouty = 'pouty',
 	soserious = 'soserious',
+	gerbil = 'gerbil'
 }
 
 export enum EyeType {

@@ -21333,6 +21333,7 @@ var MouthType;
     MouthType["happygokitty"] = "happygokitty";
     MouthType["pouty"] = "pouty";
     MouthType["soserious"] = "soserious";
+    MouthType["gerbil"] = "gerbil";
 })(MouthType = exports.MouthType || (exports.MouthType = {}));
 var EyeType;
 (function (EyeType) {
@@ -21495,7 +21496,8 @@ exports.Tertiary = {
     royalpurple: "#cf5be8",
     lemonade: "#ffef85",
     swampgreen: "#44e192",
-    chocolate: "#c47e33"
+    chocolate: "#c47e33",
+    royalblue: "#5b6ee8"
 };
 exports.EyeColor = {
     gold: "#fcdf35",

@@ -25,7 +25,8 @@ export const Tertiary = {
 	royalpurple: "#cf5be8",
 	lemonade: "#ffef85",
 	swampgreen: "#44e192",
-	chocolate: "#c47e33"
+	chocolate: "#c47e33",
+	royalblue: "#5b6ee8"
 }
 
 export const EyeColor = {
