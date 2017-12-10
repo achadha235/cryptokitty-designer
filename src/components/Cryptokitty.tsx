@@ -57,7 +57,7 @@ export enum EyeType {
 	googly = 'googly',
 }
 
-interface CryptokittyState { kittyImage?: string, kittyMouth?: string, kittyEye?: string, genes: any }
+interface CryptokittyState { kittyImage?: string, kittyMouth?: string, kittyEye?: string, genes?: any }
 
 export class Cryptokitty extends React.Component<CryptokittyFeatures, CryptokittyState> {
 
