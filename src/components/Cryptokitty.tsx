@@ -1,13 +1,13 @@
+import * as _ from 'lodash';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Grid, Header, Segment, Button, Divider } from 'semantic-ui-react';
+import { Button, Container, Divider, Grid, Header, Segment } from 'semantic-ui-react';
 import * as c from '../cattributes/colors';
 import { isNonNull, randomEnumValue } from '../utils';
-import * as _ from 'lodash';
 import { Genes } from './Genes';
 
-interface CryptokittyFeatures {
-	colors?: string[]
+interface ICryptokittyFeatures {
+	colors?: string[];
 	body?: BodyType;
 	pattern?: PatternType;
 	mouth?: MouthType;
@@ -26,7 +26,7 @@ export enum BodyType {
 	chartreux = 'chartreux',
 }
 
-export enum PatternType { 
+export enum PatternType {
 	spock = 'spock',
 	tigerpunk = 'tigerpunk',
 	calicool = 'calicool',
@@ -58,15 +58,18 @@ export enum EyeType {
 	googly = 'googly',
 }
 
-interface CryptokittyState { kittyImage?: string, kittyMouth?: string, kittyEye?: string, genes?: any }
+interface ICryptokittyState {
+	kittyImage?: string;
+	kittyMouth?: string;
+	kittyEye?: string;
+	genes?: string;
+}
 
-export class Cryptokitty extends React.Component<CryptokittyFeatures, CryptokittyState> {
-
-	static cache = {};
-
+export class Cryptokitty extends React.Component<ICryptokittyFeatures, ICryptokittyState> {
+	static private cache = {};
 	constructor(props) {
 		super(props);
-		this.state = {}
+		this.state = {};
 		const body = props.body;
 		const pattern = props.pattern;
 		const mouth = props.mouth;
@@ -77,48 +80,42 @@ export class Cryptokitty extends React.Component<CryptokittyFeatures, Cryptokitt
 		this.render = this.render.bind(this);
 	}
 
-	async componentWillMount() {
+	public async componentWillMount() {
 		const { body, pattern, mouth, eye } = this.props;
 		const colors = this.props.colors || [
 			c.Primary.shadowgrey, c.Secondary.kittencream, c.Tertiary.royalpurple, c.EyeColor.bubblegum
 		];
-		let foo = await Genes();
-		this.setState({
-			genes: foo
-		});
+		const genes = await Genes();
+		this.setState({ genes });
 	}
 
-	async componentDidReceiveProps() {
+	public async componentDidReceiveProps() {
 		const { body, pattern, mouth, eye } = this.props;
 		const colors = this.props.colors || [
 			c.Primary.shadowgrey, c.Secondary.kittencream, c.Tertiary.royalpurple, c.EyeColor.bubblegum
 		];
 	}
 
-
-	detectKittyColors(svgText) {
+	public detectKittyColors(svgText) {
 		const colors = [null, null, null, null];
-		for (const color in c.Primary) {			
+		for (const color in c.Primary) {
 			if (svgText.indexOf(c.Primary[color]) > -1) {
 				colors[0] = color;
 			}
 		}
-		for (const color in c.Secondary) {			
+		for (const color in c.Secondary) {
 			if (svgText.indexOf(c.Secondary[color]) > -1) {
-				console.log('Found color', color);				
 				colors[1] = color;
 			}
 		}
-		for (const color in c.Tertiary) {			
+		for (const color in c.Tertiary) {
 			if (svgText.indexOf(c.Tertiary[color]) > -1) {
-				console.log('Found color', color);				
 				colors[2] = color;
 			}
 		}
 
-		for (const color in c.EyeColor) {			
+		for (const color in c.EyeColor) {
 			if (svgText.indexOf(c.EyeColor[color]) > -1) {
-				console.log('Found color', color);				
 				colors[3] = color;
 			}
 		}
@@ -150,22 +147,23 @@ export class Cryptokitty extends React.Component<CryptokittyFeatures, Cryptokitt
 		}
 
 		if (isNonNull(eyeColors[3])) {
-			kittyEye = kittyEye.replace(new RegExp(c.EyeColor[eyeColors[3]], "g"), colors[3]);				
+			kittyEye = kittyEye.replace(new RegExp(c.EyeColor[eyeColors[3]], "g"), colors[3]);
 		}
 
 		if (isNonNull(bodyColors[2])) {
-			kittyImage = kittyImage.replace(new RegExp(c.Tertiary[bodyColors[2]], "g"), colors[2]);	
+			kittyImage = kittyImage.replace(new RegExp(c.Tertiary[bodyColors[2]], "g"), colors[2]);
 		}
-		
+
 		if (isNonNull(mouthColors[0])) {
-			kittyMouth = kittyMouth.replace(new RegExp(c.Primary[mouthColors[0]], "g"), colors[0]);	
+			kittyMouth = kittyMouth.replace(new RegExp(c.Primary[mouthColors[0]], "g"), colors[0]);
 		}
+		// tslint:disable:jsx-no-multiline-js
 
 		return (
 			<Container style={{ position: 'relative' }}>
 				{
-					(kittyImage === null || kittyMouth === null || kittyEye === null ? 
-						<div style={{ position: 'absolute'}}>						
+					(kittyImage === null || kittyMouth === null || kittyEye === null ?
+						<div style={{ position: 'absolute'}}>
 							<img style={styles.fixed} src={'src/cattributes/nullcat.svg'}/>
 						</div> :
 						<div style={{ position: 'absolute'}}>
