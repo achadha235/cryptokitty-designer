@@ -15,7 +15,6 @@ export class About extends React.Component {
 		super(props);
 		this.fieldChanged = this.fieldChanged.bind(this);
 		this.randomKitty = this.randomKitty.bind(this);
-		this.findKitty = this.randomKitty.bind(this);
 	}
 
 	// tslint:disable-next-line:member-ordering
@@ -41,7 +40,7 @@ export class About extends React.Component {
 		this.setState({
 			body: randomEnumValue(BodyType),
 			eye: randomEnumValue(EyeType),
-			eyeColor: randomKey(c.EyeColor)
+			eyeColor: randomKey(c.EyeColor),
 			mouth: randomEnumValue(MouthType),
 			pattern: randomEnumValue(PatternType),
 			primary: randomKey(c.Primary),
@@ -53,7 +52,6 @@ export class About extends React.Component {
 	public render() {
 		const onFieldChange = this.fieldChanged;
 		const randomKitty = this.randomKitty;
-		const findKitty = this.findKitty;
 		const { body, pattern, eye, mouth, primary, secondary, tertiary, eyeColor } = this.state;
 		const searchUrlStr = [body, pattern, eye, mouth, primary, secondary].join('%20');
 		const kittyFindUrl = `https://www.cryptokitties.co/marketplace/sale?search=${searchUrlStr}`;

@@ -66,7 +66,7 @@ interface ICryptokittyState {
 }
 
 export class Cryptokitty extends React.Component<ICryptokittyFeatures, ICryptokittyState> {
-	static private cache = {};
+	private static cache = {};
 	constructor(props) {
 		super(props);
 		this.state = {};
