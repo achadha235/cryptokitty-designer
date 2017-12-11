@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: cryptokitty-and-me # NOTE: update this with your service name
+service: cryptokittyandme 
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -20,11 +20,6 @@ service: cryptokitty-and-me # NOTE: update this with your service name
 provider:
   name: aws
   runtime: nodejs6.10
-
-plugins:  
-    - serverless-plugin-typescript
-    - serverless-offline
-
 
 # you can overwrite defaults here
 #  stage: dev
@@ -59,14 +54,9 @@ plugins:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
-functions:  
+functions:
   hello:
     handler: handler.hello
-
-    events:
-     - http:
-         path: hello
-         method: get
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
